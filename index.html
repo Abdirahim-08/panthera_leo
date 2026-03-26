@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panthera Leo — The King of the Wild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">🦁</span>
+      <span class="logo-text">PANTHERA LEO</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#habitat">Habitat</a></li>
+      <li><a href="#behavior">Behavior</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#conservation">Conservation</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon" id="themeIcon">☀️</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1800&q=80" alt="Majestic lion in the wild" class="hero-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up" style="--d:0.1s">Panthera leo · Apex Predator</p>
+      <h1 class="hero-title reveal-up" style="--d:0.25s">
+        <span>THE KING</span>
+        <em>of the Wild</em>
+      </h1>
+      <p class="hero-sub reveal-up" style="--d:0.4s">
+        Witness the raw majesty of Earth's most iconic predator —<br>
+        sovereign of the savannah, guardian of the grasslands.
+      </p>
+      <a href="#about" class="hero-cta reveal-up" style="--d:0.55s">
+        <span>Explore More</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="section-label">Introduction</p>
+          <h2 class="section-title">The Lion Story</h2>
+          <p class="body-text">
+            The lion (<em>Panthera leo</em>) is one of the most recognizable animals on Earth — a symbol of courage, power, and wild beauty. As the second-largest living cat after the tiger, lions have captivated human imagination for millennia, appearing in ancient art, royal heraldry, and myth across every culture that knew them.
+          </p>
+          <p class="body-text">
+            Unlike most cats, lions are highly social, living in cohesive family groups called <strong>prides</strong>. This social complexity, combined with their raw physical prowess, makes them the undisputed apex predators of the African savannah.
+          </p>
+          <div class="sciname-badge">
+            <span class="sci-label">Scientific Name</span>
+            <span class="sci-value">Panthera leo</span>
+          </div>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="stat-card">
+            <div class="stat-icon">⚖️</div>
+            <div class="stat-num">190<span>kg</span></div>
+            <div class="stat-label">Average Male Weight</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📅</div>
+            <div class="stat-num">10–14<span>yrs</span></div>
+            <div class="stat-label">Wild Lifespan</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📏</div>
+            <div class="stat-num">3.3<span>m</span></div>
+            <div class="stat-label">Body Length</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🌍</div>
+            <div class="stat-num">20k</div>
+            <div class="stat-label">Wild Population Left</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🔊</div>
+            <div class="stat-num">8<span>km</span></div>
+            <div class="stat-label">Roar Reach</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏃</div>
+            <div class="stat-num">80<span>km/h</span></div>
+            <div class="stat-label">Top Sprint Speed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABITAT -->
+  <section class="section habitat" id="habitat">
+    <div class="habitat-visual">
+      <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1400&q=80" alt="African savannah" class="habitat-bg-img" />
+      <div class="habitat-overlay"></div>
+    </div>
+    <div class="container habitat-content">
+      <div class="reveal-up">
+        <p class="section-label light">Where They Roam</p>
+        <h2 class="section-title light">Home: The Savannah</h2>
+      </div>
+      <div class="habitat-cards reveal-up" style="--d:0.2s">
+        <div class="hab-card">
+          <div class="hab-card-icon">🌾</div>
+          <h3>African Grasslands</h3>
+          <p>Sub-Saharan Africa is home to the vast majority of wild lions. The Serengeti, Maasai Mara, and Kruger National Park host some of the most thriving prides on the continent.</p>
+        </div>
+        <div class="hab-card">
+          <div class="hab-card-icon">🌳</div>
+          <h3>Open Woodlands</h3>
+          <p>Seasonal woodland edges and bushveld provide lions with cover for ambush hunting and shade during the midday heat, where temperatures can soar past 40°C.</p>
+        </div>
+        <div class="hab-card">
+          <div class="hab-card-icon">🏔️</div>
+          <h3>Gir Forest, India</h3>
+          <p>The Asiatic lion (<em>P. leo persica</em>) survives in Gujarat's Gir Forest National Park — the last refuge for this critically endangered subspecies with only ~700 individuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEHAVIOR -->
+  <section class="section behavior" id="behavior">
+    <div class="container">
+      <div class="behavior-header reveal-up">
+        <p class="section-label">Lifestyle</p>
+        <h2 class="section-title">Behavior & Society</h2>
+      </div>
+      <div class="behavior-grid">
+        <div class="beh-item reveal-left" style="--d:0s">
+          <div class="beh-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551009175-15bda8714792?w=700&q=80" alt="Lion pride" />
+          </div>
+          <div class="beh-text">
+            <h3>The Pride System</h3>
+            <p>Lions live in groups of 4–40 individuals called prides, typically consisting of related females, their cubs, and a coalition of 2–4 males. This social structure is unique among the big cats and central to their survival strategy.</p>
+          </div>
+        </div>
+        <div class="beh-item beh-reverse reveal-right" style="--d:0.15s">
+          <div class="beh-img-wrap">
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=700&q=80" alt="Lioness hunting" />
+          </div>
+          <div class="beh-text">
+            <h3>The Hunt</h3>
+            <p>Lionesses do the majority of hunting — working together in coordinated ambushes to take down prey far larger than themselves. Primary prey includes wildebeest, zebra, and buffalo. Lions are opportunistic and will scavenge when the chance arises.</p>
+          </div>
+        </div>
+        <div class="beh-item reveal-left" style="--d:0.3s">
+          <div class="beh-img-wrap">
+            <img src="https://images.unsplash.com/photo-1533760881669-80db4d7b4c15?w=700&q=80" alt="Lion resting" />
+          </div>
+          <div class="beh-text">
+            <h3>Daily Rhythms</h3>
+            <p>Lions sleep up to 20 hours a day, conserving energy in the intense African heat. Most activity — including hunting and socializing — happens during the cooler hours of dawn, dusk, and night. They are crepuscular and nocturnal hunters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header reveal-up">
+        <p class="section-label">Visual Story</p>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="gallery-grid reveal-up" style="--d:0.2s">
+        <div class="gal-item gal-tall">
+          <img src="https://images.unsplash.com/photo-1502780402662-acc01917338e?w=800&q=80" alt="Lion portrait close-up" loading="lazy"/>
+          <div class="gal-overlay"><span>Portrait</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80" alt="Lion in golden grass" loading="lazy"/>
+          <div class="gal-overlay"><span>Golden Hour</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1560275619-4cc5fa59d3ae?w=600&q=80" alt="Lion cubs" loading="lazy"/>
+          <div class="gal-overlay"><span>Cubs</span></div>
+        </div>
+        <div class="gal-item gal-wide">
+          <img src="https://images.unsplash.com/photo-1547483238-f400e65ccd56?w=1000&q=80" alt="Lion at sunset" loading="lazy"/>
+          <div class="gal-overlay"><span>Sunset King</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1504173010664-32509107de4a?w=600&q=80" alt="Lioness" loading="lazy"/>
+          <div class="gal-overlay"><span>Lioness</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=600&q=80" alt="Lion roaring" loading="lazy"/>
+          <div class="gal-overlay"><span>The Roar</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUN FACTS -->
+  <section class="section facts" id="facts">
+    <div class="facts-bg-text">FACTS</div>
+    <div class="container">
+      <div class="facts-header reveal-up">
+        <p class="section-label">Did You Know?</p>
+        <h2 class="section-title">Fascinating Facts</h2>
+      </div>
+      <div class="facts-grid reveal-up" style="--d:0.15s">
+        <div class="fact-card">
+          <span class="fact-num">01</span>
+          <p>A lion's roar can be heard up to <strong>8 kilometres away</strong> — used to communicate territory and location to pride members.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">02</span>
+          <p>Lions spend <strong>up to 20 hours</strong> per day resting and sleeping to conserve energy for nighttime hunts.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">03</span>
+          <p>A male lion's <strong>iconic mane</strong> starts growing at about one year old and darkens with age — a signal of health and dominance.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">04</span>
+          <p>Lions are the <strong>only social big cats</strong> in the world — all other species lead largely solitary lives.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">05</span>
+          <p>Lions have a unique patch of skin on the back of each ear called the <strong>"ocelli"</strong> — dark spots used in cub communication.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">06</span>
+          <p>A lion's tongue is so rough it can <strong>strip flesh from bones</strong> — the backward-facing papillae act like a natural rasp.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">07</span>
+          <p>Lions can go <strong>4–5 days without water</strong>, getting much of their moisture from the prey they eat.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-num">08</span>
+          <p>A pride is led by <strong>female lions</strong> who do most of the hunting and cub-rearing — the backbone of the social structure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSERVATION -->
+  <section class="section conservation" id="conservation">
+    <div class="container">
+      <div class="cons-grid">
+        <div class="cons-text reveal-left">
+          <p class="section-label">Act Now</p>
+          <h2 class="section-title">Under Threat</h2>
+          <p class="body-text">
+            Lions have <strong>vanished from over 90% of their historic range</strong>. What once covered the entire African continent and large parts of Europe and Asia has contracted to fragmented pockets south of the Sahara Desert.
+          </p>
+          <ul class="threat-list">
+            <li>
+              <span class="threat-dot"></span>
+              <div>
+                <strong>Habitat Loss</strong>
+                <p>Agricultural expansion and human settlement encroach on traditional lion territory, pushing prides into ever-smaller reserves.</p>
+              </div>
+            </li>
+            <li>
+              <span class="threat-dot"></span>
+              <div>
+                <strong>Human-Wildlife Conflict</strong>
+                <p>Lions preying on livestock lead to retaliatory killings — one of the most significant causes of lion mortality today.</p>
+              </div>
+            </li>
+            <li>
+              <span class="threat-dot"></span>
+              <div>
+                <strong>Trophy Hunting & Poaching</strong>
+                <p>Illegal trade in lion bones for traditional medicine markets in Asia, and legal trophy hunting, continue to reduce populations.</p>
+              </div>
+            </li>
+          </ul>
+          <a href="https://www.lionrecovery.org" target="_blank" rel="noopener" class="cons-cta">
+            Support Conservation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="cons-visual reveal-right">
+          <div class="cons-img-wrap">
+            <img src="https://images.unsplash.com/photo-1591389703635-e15a07b842d7?w=800&q=80" alt="Lion in conservation" loading="lazy"/>
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Vulnerable</strong>
+              <span>IUCN Red List Status</span>
+            </div>
+          </div>
+          <div class="pop-counter">
+            <span class="pop-num">~20,000</span>
+            <span class="pop-label">lions remain in the wild</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦁</span>
+        <span class="logo-text">PANTHERA LEO</span>
+      </div>
+      <p class="footer-tagline">Educating the world, one pride at a time.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#habitat">Habitat</a>
+        <a href="#behavior">Behavior</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#conservation">Conservation</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter/X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2025 Panthera Leo Educational Site. All rights reserved. Images via Unsplash.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
